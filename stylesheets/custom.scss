@@ -1,5 +1,11 @@
-$orange: #d03800;
+$black: #2b3443;
+$orange: #fe6244;
+$blue: #253efe;
+$beige: #fffbf9;
+$grey: #aaaeb4;
+
 $dark_orange: #a01f0c;
+
 
 /* reset.css */
 
@@ -34,8 +40,9 @@ html {
 
 body {
   font-size: 100%;
-  font-family: 'Fira Sans', Helvetica, Arial, 'Helvetica Neue';
-  color: #3a3833;
+  font-family: Helvetica, Arial, 'Helvetica Neue';
+  color: $black;
+  background-color: $beige;
 }
 
 .center {
@@ -44,7 +51,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  color: #57544f;
 }
 
 h1 {
@@ -52,34 +58,22 @@ h1 {
   margin-bottom: 0.5em;
   margin-top: 1em;
   font-size: 1.2em;
-  text-transform: uppercase;
-  color: $orange;
 }
 
 h2 {
   line-height: 1;
-  font-family: 'Fira Sans';
-  font-weight: 500;
-  color: $orange;
 }
 
 h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
-  font-family: 'Fira Sans';
-  font-weight: 500;
   text-align: center;
 }
 
 h4 {
   font-size: 1em;
   margin-bottom: 0;
-  font-family: 'Fira Sans';
-  font-weight: 500;
-  color: $orange;
-  float: left;
-  /* For slide download on the right */
   span {
     display: block;
   }
@@ -92,13 +86,11 @@ p {
 em, i {
   font-weight: normal;
   font-style: normal;
-  font-family: 'Fira Sans';
   font-style: italic;
 }
 
 aside {
   font-size: 1.25em;
-  font-family: 'Fira Sans';
   font-style: italic;
   margin: 1em 0 3.5em 0;
   color: #57544f;
@@ -196,14 +188,7 @@ hr {
 /* state changes (special styles for next meetup) */
 
 h2.title-block {
-  font-family: 'Fira Sans';
-  font-weight: 500;
   font-size: 2em;
-  padding: 0.5em 0;
-  margin: 0;
-  color: white;
-  background: #57544f;
-  text-align: center;
 }
 
 article header {
@@ -215,14 +200,6 @@ article header {
     color: white;
     background: $orange;
   }
-  .attention {
-    font-style: italic;
-    color: $orange;
-  }
-}
-
-aside, footer, .next p {
-  color: #57544f;
 }
 
 /* links */
@@ -231,8 +208,6 @@ a {
   padding: 0 1px;
   color: $dark_orange;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-  -moz-transition: color 0.3s ease, background-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease;
   &:hover, &:active, &:focus {
     color: $orange;
@@ -313,7 +288,6 @@ ul.two > li.last {
 }
 
 .speaker_info {
-  font-family: 'Fira Sans';
   font-style: italic;
   border-top: 0.25em solid #b2b1ad;
   padding-top: 0.5em;
@@ -347,16 +321,6 @@ ul.two > li.last {
   }
 }
 
-.cancelled {
-  text-decoration: line-through;
-}
-
-.cancelled_hint {
-  text-decoration: none;
-  font-family: 'Fira Sans';
-  font-weight: 500;
-}
-
 .talk_download {
   display: block;
   background: url('../images/slide-icon.png') no-repeat;
@@ -372,50 +336,6 @@ ul.two > li.last {
   }
 }
 
-/* social network links list */
-
-.social {
-  padding: 0;
-  overflow: hidden;
-  li {
-    width: 32%;
-    float: left;
-    margin-right: 2%;
-    overflow: hidden;
-    &.last {
-      margin-right: 0;
-    }
-  }
-  a {
-    display: block;
-    min-height: 3em;
-    height: auto !important;
-    height: 3em;
-    color: $orange;
-    font-size: 0.875em;
-    padding: 9.5em 2em 1.5em 2em;
-    text-decoration: none;
-    border-radius: 2px;
-    &:hover, &:active, &:focus {
-      background-color: white;
-      color: white;
-      color: $orange;
-      text-decoration: none;
-    }
-  }
-}
-
-.social_twitter, .social_fb, .social_mail {
-  background: $dark_orange url(/images/upfront_social_icons.png) no-repeat 50% 16px;
-}
-
-.social_fb {
-  background-position: 50% -293px;
-}
-
-.social_mail {
-  background-position: 50% -605px;
-}
 
 /* speakers and team */
 
@@ -462,28 +382,6 @@ ul.two > li.last {
   }
 }
 
-footer {
-  background: $orange;
-  color: white;
-  text-align: center;
-  border-bottom: 1px solid $dark_orange;
-  border-top: 1px solid white;
-  h3 {
-    color: white;
-  }
-  .container {
-    padding: 3em 0;
-    margin-bottom: 0;
-  }
-  a {
-    color: white;
-    text-decoration: underline;
-    &:hover, &:active, &:focus {
-      color: white;
-      text-decoration: underline;
-    }
-  }
-}
 
 .team a {
   color: #3a3833;

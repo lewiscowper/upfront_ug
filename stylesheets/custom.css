@@ -24,46 +24,34 @@ html {
 
 body {
   font-size: 100%;
-  font-family: 'Fira Sans', Helvetica, Arial, 'Helvetica Neue';
-  color: #3a3833; }
+  font-family: Helvetica, Arial, 'Helvetica Neue';
+  color: #2b3443;
+  background-color: #fffbf9; }
 
 .center {
   text-align: center; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  color: #57544f; }
+  font-weight: normal; }
 
 h1 {
   line-height: 1;
   margin-bottom: 0.5em;
   margin-top: 1em;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  color: #d03800; }
+  font-size: 1.2em; }
 
 h2 {
-  line-height: 1;
-  font-family: 'Fira Sans';
-  font-weight: 500;
-  color: #d03800; }
+  line-height: 1; }
 
 h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
-  font-family: 'Fira Sans';
-  font-weight: 500;
   text-align: center; }
 
 h4 {
   font-size: 1em;
-  margin-bottom: 0;
-  font-family: 'Fira Sans';
-  font-weight: 500;
-  color: #d03800;
-  float: left;
-  /* For slide download on the right */ }
+  margin-bottom: 0; }
   h4 span {
     display: block; }
 
@@ -73,12 +61,10 @@ p {
 em, i {
   font-weight: normal;
   font-style: normal;
-  font-family: 'Fira Sans';
   font-style: italic; }
 
 aside {
   font-size: 1.25em;
-  font-family: 'Fira Sans';
   font-style: italic;
   margin: 1em 0 3.5em 0;
   color: #57544f;
@@ -125,7 +111,7 @@ nav a {
     text-decoration: underline; }
 
 .submit-btn {
-  background-color: #d03800;
+  background-color: #fe6244;
   color: white;
   border-radius: 4px;
   margin-left: 10px; }
@@ -135,7 +121,7 @@ nav a {
     text-decoration: none; }
 
 .banner {
-  background-color: #d03800;
+  background-color: #fe6244;
   color: white;
   text-align: center;
   font-size: 0.75em;
@@ -155,38 +141,23 @@ hr {
 
 /* state changes (special styles for next meetup) */
 h2.title-block {
-  font-family: 'Fira Sans';
-  font-weight: 500;
-  font-size: 2em;
-  padding: 0.5em 0;
-  margin: 0;
-  color: white;
-  background: #57544f;
-  text-align: center; }
+  font-size: 2em; }
 
 article header {
   margin-bottom: 3em; }
 
 .next h2.title-block {
   color: white;
-  background: #d03800; }
-.next .attention {
-  font-style: italic;
-  color: #d03800; }
-
-aside, footer, .next p {
-  color: #57544f; }
+  background: #fe6244; }
 
 /* links */
 a {
   padding: 0 1px;
   color: #a01f0c;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-  -moz-transition: color 0.3s ease, background-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease; }
   a:hover, a:active, a:focus {
-    color: #d03800;
+    color: #fe6244;
     text-decoration: underline;
     outline: none; }
 
@@ -241,7 +212,6 @@ ul.two > li.last {
   margin-right: 0; }
 
 .speaker_info {
-  font-family: 'Fira Sans';
   font-style: italic;
   border-top: 0.25em solid #b2b1ad;
   padding-top: 0.5em;
@@ -266,16 +236,8 @@ ul.two > li.last {
     .speaker_links li a {
       color: #b2b1ad; }
       .speaker_links li a:hover, .speaker_links li a:active, .speaker_links li a:focus {
-        color: #d03800;
+        color: #fe6244;
         text-decoration: none; }
-
-.cancelled {
-  text-decoration: line-through; }
-
-.cancelled_hint {
-  text-decoration: none;
-  font-family: 'Fira Sans';
-  font-weight: 500; }
 
 .talk_download {
   display: block;
@@ -289,42 +251,6 @@ ul.two > li.last {
   margin: 2px; }
   .talk_download:hover {
     background-position: top; }
-
-/* social network links list */
-.social {
-  padding: 0;
-  overflow: hidden; }
-  .social li {
-    width: 32%;
-    float: left;
-    margin-right: 2%;
-    overflow: hidden; }
-    .social li.last {
-      margin-right: 0; }
-  .social a {
-    display: block;
-    min-height: 3em;
-    height: auto !important;
-    height: 3em;
-    color: #d03800;
-    font-size: 0.875em;
-    padding: 9.5em 2em 1.5em 2em;
-    text-decoration: none;
-    border-radius: 2px; }
-    .social a:hover, .social a:active, .social a:focus {
-      background-color: white;
-      color: white;
-      color: #d03800;
-      text-decoration: none; }
-
-.social_twitter, .social_fb, .social_mail {
-  background: #a01f0c url(/images/upfront_social_icons.png) no-repeat 50% 16px; }
-
-.social_fb {
-  background-position: 50% -293px; }
-
-.social_mail {
-  background-position: 50% -605px; }
 
 /* speakers and team */
 .team_cntr {
@@ -361,24 +287,6 @@ ul.two > li.last {
     margin-bottom: 0.5em;
     float: none; }
 
-footer {
-  background: #d03800;
-  color: white;
-  text-align: center;
-  border-bottom: 1px solid #a01f0c;
-  border-top: 1px solid white; }
-  footer h3 {
-    color: white; }
-  footer .container {
-    padding: 3em 0;
-    margin-bottom: 0; }
-  footer a {
-    color: white;
-    text-decoration: underline; }
-    footer a:hover, footer a:active, footer a:focus {
-      color: white;
-      text-decoration: underline; }
-
 .team a {
   color: #3a3833;
   text-decoration: none;
@@ -387,7 +295,7 @@ footer {
     color: #3a3833;
     text-decoration: underline; }
   .team a:hover, .team a:active, .team a:focus {
-    color: #d03800;
+    color: #fe6244;
     text-decoration: none; }
 
 @media screen and (max-device-width: 660px), screen and (max-width: 660px) {
